@@ -238,7 +238,8 @@ a {
 .project .window.picture {
   --color: var(--purple);
   top: 30%;
-  right: 10%;
+  left: 100%;
+  transform: translateX(-100%);
 }
 
 .project .window.main {

@@ -230,19 +230,19 @@ function repositionDecors() {
     const height = decor.offsetHeight;
     const area = width * height;
 
-    let foundPosition = false;
     let decorX, decorY;
 
-    // We use a limited-iteration heuristic to avoid infinite loops
-    // while targeting the "Area Constraint"
     for (let attempts = 0; attempts < 20; attempts++) {
       decorX = Math.max(
         edgePadding,
-        getRandomInt(0, window.innerWidth - width - edgePadding),
+        getRandomInt(0, decor.parentElement.offsetWidth - width - edgePadding),
       );
       decorY = Math.max(
         edgePadding,
-        getRandomInt(0, window.innerHeight - height - edgePadding),
+        getRandomInt(
+          0,
+          decor.parentElement.offsetHeight - height - edgePadding,
+        ),
       );
 
       const currentRect = {
@@ -258,7 +258,6 @@ function repositionDecors() {
         totalOverlapArea += calculateOverlapArea(currentRect, other);
       }
 
-      // Condition: Overlap must be <= 30% of current decor's area
       if (totalOverlapArea / area <= maxOverlapRatio) {
         foundPosition = true;
         break;
