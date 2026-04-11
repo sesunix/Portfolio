@@ -1,11 +1,11 @@
 {
   "window_X": {
     "min": 10,
-    "max": 40
+    "max": 30
   },
   "window_y": {
-    "min": 10,
-    "max": 30
+    "min": 20,
+    "max": 40
   },
   "sticker_X": {
     "min": 5,
