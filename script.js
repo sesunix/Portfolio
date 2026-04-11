@@ -119,8 +119,9 @@ function generateDecors(decor) {
         decorType = getRandomInt(0, 1) === 0 ? "message" : "picture";
       }
 
-      if (decorCont.dataset.decorPrio) {
-        decorType = decorCont.dataset.decorPrio;
+      if ("decorPrio" in decorCont.dataset) {
+        console.log(decorCont.dataset.decorPrio, decorType);
+        if (decorCont.dataset.decorPrio !== decorType) continue;
       }
 
       const decorSizeBasisX =
