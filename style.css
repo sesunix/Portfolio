@@ -1,0 +1,269 @@
+:root {
+  --blue: #4d76f5;
+  --pink: #f58eae;
+  --yellow: #ede42b;
+  --orange: #ed892b;
+  --purple: #8b5cb8;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  --main-bg-color: hsl(from var(--yellow) 90% 98% h);
+
+  margin: 0;
+  padding: 0;
+  font-family: "Red Hat Text", sans-serif;
+  background-color: var(--main-bg-color);
+  background-image: url("assets/images/bg_lines.svg");
+  background-size: 120vh 120vh;
+  background-repeat: repeat;
+
+  height: 400vh;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0;
+  padding: 0;
+  font-weight: normal;
+}
+
+a {
+  color: oklch(from var(--color) 0.4 c h);
+  text-align: center;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  min-height: 100vh;
+}
+
+.container.main {
+  height: fit-content;
+}
+
+.window {
+  --color: var(--blue);
+
+  box-sizing: border-box;
+  width: 50vw;
+  height: 20vh;
+  background-color: oklch(from var(--color) 0.98 0.1 h);
+  border-color: oklch(from var(--color) 0.4 0.1 h);
+  color: oklch(from var(--color) 0.4 c h);
+  border-radius: 0.3em;
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  border: 0.1em solid;
+  overflow: hidden;
+  font-size: calc(0.5vw + 0.8em);
+  min-width: fit-content;
+  min-height: fit-content;
+  max-height: 70%;
+  height: fit-content;
+  box-shadow: 0em 0.3em 0.3em rgba(0, 0, 0, 0.4);
+  z-index: 2;
+}
+
+[data-color="blue"] {
+  --color: var(--blue);
+}
+[data-color="pink"] {
+  --color: var(--pink);
+}
+[data-color="yellow"] {
+  --color: var(--yellow);
+}
+[data-color="orange"] {
+  --color: var(--orange);
+}
+[data-color="purple"] {
+  --color: var(--purple);
+}
+
+.window .navbar {
+  background-color: oklch(from var(--color) 0.6 0.1 h);
+  border-bottom-color: oklch(from var(--color) 0.4 0.1 h);
+  border-bottom-width: inherit;
+  border-bottom-style: inherit;
+  min-height: 50px;
+  height: 15%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 0.4em;
+  position: relative;
+  min-width: fit-content;
+  cursor: grab;
+  gap: 1em;
+}
+
+.window .navbar:active {
+  cursor: grabbing;
+}
+
+.window .navbar h2 {
+  flex: 3;
+  color: oklch(from var(--color) 0.3 0.1 h);
+  font-size: 1em;
+  font-weight: bold;
+}
+
+.window .navbar .nav-buttons {
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  justify-content: end;
+  align-items: center;
+  gap: 0.3em;
+  height: 100%;
+}
+
+.window .navbar .nav-button {
+  width: 1.5em;
+  height: 1.5em;
+  cursor: pointer;
+}
+
+.window .content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: safe center;
+  flex: 1;
+  padding: 0.5em;
+  overflow: auto;
+  max-width: 70vw;
+  max-height: 70vh;
+  min-height: 10vh;
+  width: 0;
+  min-width: 100%;
+  gap: 0.5em;
+}
+
+.window .content h3,
+.window .content h4,
+.window .content p {
+  text-align: center;
+}
+
+.window.main .content h3 {
+  font-weight: bold;
+}
+
+.content img,
+.content video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.project img,
+.project video {
+  max-height: 40vh;
+  object-fit: contain;
+}
+
+.sticker {
+  position: absolute;
+  cursor: grab;
+}
+
+.sticker:active {
+  cursor: grabbing;
+}
+
+.sticker svg {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+.window.main {
+  width: 70vw;
+  max-width: 500px;
+  min-height: 40vh;
+  border-width: 0.2em;
+  z-index: 1000;
+}
+
+.window.divider {
+  --color: var(--orange);
+  width: 60vw;
+  max-width: 400px;
+  min-height: 20vh;
+  top: 0;
+}
+
+.window.picture {
+  --color: var(--pink);
+  z-index: 3;
+}
+
+#projects {
+  padding: 20% 0 0 0;
+}
+
+.project {
+  height: 80vh;
+  position: relative;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: end;
+}
+
+.project .window.video {
+  top: 20%;
+  left: 10%;
+}
+
+.project .window.video .content {
+  max-height: 60%;
+}
+
+.project .window.picture {
+  --color: var(--purple);
+  top: 30%;
+  right: 10%;
+}
+
+.project .window.main {
+  --color: var(--yellow);
+  bottom: 0px;
+}
+
+.contact-cont {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5em;
+}
+
+#symbol path,
+#symbol rect {
+  stroke: oklch(from var(--color) 0.98 0.1 h);
+}
+
+#bg {
+  fill: oklch(from var(--color) 0.4 0.1 h);
+}
+
+g#close #bg {
+  fill: oklch(from red 0.4 0.1 h);
+}

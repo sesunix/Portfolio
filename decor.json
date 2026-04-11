@@ -1,0 +1,81 @@
+{
+  "window_X": {
+    "min": 10,
+    "max": 40
+  },
+  "window_y": {
+    "min": 10,
+    "max": 30
+  },
+  "sticker_X": {
+    "min": 5,
+    "max": 15
+  },
+  "sticker_y": {
+    "min": 5,
+    "max": 10
+  },
+  "sticker_rotation": {
+    "min": -2,
+    "max": 2
+  },
+  "count": {
+    "window": 3,
+    "sticker": 5
+  },
+  "window_colors": ["blue", "pink", "purple", "purple", "yellow", "orange"],
+  "type": ["message", "picture", "sticker"],
+  "nav_button_svgs": [
+    {
+      "name": "minimize",
+      "html_tag": "<svg id=\"min\" class=\"nav-button\" width=\"262\" height=\"262\" viewBox=\"0 0 262 262\" preserveAspectRatio=\"xMidYMid meet\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"min\" clip-path=\"url(#clip0_66_107)\"><circle id=\"bg\" cx=\"131\" cy=\"131\" r=\"131\" fill=\"#A19B2A\" /><g id=\"symbol\"><path id=\"Line 30\" d=\"M67.2197 131.329H195.435\" stroke=\"#EBF2FF\" stroke-width=\"30.2308\" stroke-linecap=\"round\" /></g></g><defs><clipPath id=\"clip0_66_107\"><rect width=\"262\" height=\"262\" fill=\"white\" /></clipPath></defs></svg>"
+    },
+    {
+      "name": "maximize",
+      "html_tag": "<svg id=\"max\" class=\"nav-button\" width=\"262\" height=\"262\" viewBox=\"0 0 262 262\" preserveAspectRatio=\"xMidYMid meet\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"max\" clip-path=\"url(#clip0_66_72)\"><circle id=\"bg\" cx=\"131\" cy=\"131\" r=\"131\" fill=\"#34B25C\" /><g id=\"symbol\"><g id=\"Rectangle 14\"><mask id=\"path-2-inside-1_66_72\" fill=\"white\"><rect x=\"67\" y=\"67\" width=\"129\" height=\"129\" rx=\"25\" /></mask><rect x=\"67\" y=\"67\" width=\"129\" height=\"129\" rx=\"25\" stroke=\"#EBF2FF\" stroke-width=\"60.46\" mask=\"url(#path-2-inside-1_66_72)\" /></g></g></g><defs><clipPath id=\"clip0_66_72\"><rect width=\"262\" height=\"262\" fill=\"white\" /></clipPath></defs></svg>"
+    },
+    {
+      "name": "close",
+      "html_tag": "<svg id=\"close\" class=\"nav-button\" width=\"262\" height=\"262\" viewBox=\"0 0 262 262\" preserveAspectRatio=\"xMidYMid meet\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"close\" clip-path=\"url(#clip0_39_183)\"><circle id=\"bg\" cx=\"131\" cy=\"131\" r=\"131\" fill=\"#E4777F\" /><g id=\"symbol\"><path id=\"Line 30\" d=\"M86 86L176.662 176.662\" stroke=\"#EBF2FF\" stroke-width=\"30.2308\" stroke-linecap=\"round\" /><path id=\"Line 31\" d=\"M176.663 86L86.0011 176.662\" stroke=\"#EBF2FF\" stroke-width=\"30.2308\" stroke-linecap=\"round\" /></g></g><defs><clipPath id=\"clip0_39_183\"><rect width=\"262\" height=\"262\" fill=\"white\" /></clipPath></defs></svg>"
+    }
+  ],
+  "sticker_svgs": [
+    {
+      "name": "heart",
+      "html_tag": "<svg id=\"heart\" width=\"582\" height=\"460\" viewBox=\"0 0 582 460\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"><g id=\"heart\"><path id=\"heart_2\" d=\"M133.522 9.44446C174.43 4.62106 226.027 17.3561 286.99 69.9366C339.843 25.0714 390.975 12.8525 433.124 15.5363C476.642 18.3072 510.058 36.9324 525.358 50.6857C539.542 63.4363 565.816 89.6115 571.431 128.094C577.147 167.263 561.144 216.131 497.486 273.354C492.144 278.156 486.882 282.885 481.704 287.539C480.103 289.862 478.206 292.041 476.007 294.018L312.118 441.338C305.798 447.019 297.992 450.125 290.052 450.639C280.026 451.745 269.635 448.694 261.629 441.498L97.7388 294.178C95.2863 291.973 93.2068 289.518 91.4976 286.891C86.4444 282.348 81.3619 277.779 76.2603 273.193C21.0618 223.575 5.71518 174.869 8.89893 134.467C12.0386 94.6262 33.0985 64.2692 48.3882 50.5255C62.7327 37.6314 91.5571 14.3926 133.522 9.44446Z\" fill=\"#CA7272\" stroke=\"#0076A5\" stroke-width=\"17\"/><g id=\"shine\"><path id=\"Vector 10\" d=\"M388.941 103.426C419.941 84.4258 472.441 111.426 461.94 180.425\" stroke=\"white\" stroke-width=\"25\" stroke-linecap=\"round\"/><circle id=\"Ellipse 2\" cx=\"433.001\" cy=\"235.003\" r=\"17\" fill=\"white\"/></g></g></svg>"
+    },
+    {
+      "name": "star",
+      "html_tag": "<svg id=\"star\" width=\"575\" height=\"575\" viewBox=\"0 0 575 575\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <g id=\"star\"> <path id=\"star_2\" d=\"M256.336 34.7852C270.562 11.4535 304.438 11.4535 318.664 34.7852L383.99 141.928C386.698 146.369 391.07 149.544 396.131 150.747L518.216 179.768C544.802 186.087 555.27 218.307 537.477 239.046L455.765 334.284C452.378 338.232 450.708 343.37 451.128 348.555L461.255 473.633C463.46 500.87 436.053 520.783 410.83 510.269L295.003 461.986C290.201 459.985 284.799 459.985 279.997 461.986L164.17 510.269C138.947 520.783 111.54 500.87 113.745 473.633L123.872 348.555C124.292 343.37 122.622 338.232 119.235 334.284L37.5234 239.046C19.7297 218.307 30.1985 186.087 56.7842 179.768L178.869 150.747C183.93 149.544 188.302 146.369 191.01 141.928L256.336 34.7852Z\" fill=\"#FAE391\" stroke=\"#0076A5\" stroke-width=\"17\"/> <g id=\"shine\"> <path id=\"Vector 11\" d=\"M288 109.598L330.141 183.301\" stroke=\"white\" stroke-width=\"25\" stroke-linecap=\"round\"/> <ellipse id=\"Ellipse 3\" cx=\"380.5\" cy=\"216\" rx=\"16.5\" ry=\"17\" fill=\"white\"/> </g></g></svg>"
+    },
+    {
+      "name": "triangle",
+      "html_tag": "<svg id=\"triangle\" width=\"521\" height=\"484\" viewBox=\"0 0 521 484\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <path id=\"triangle\" d=\"M214.947 53.7057C234.771 18.0981 285.99 18.098 305.814 53.7057L487.081 379.297C506.377 413.958 481.317 456.591 441.647 456.591H79.1138C39.444 456.591 14.384 413.958 33.6802 379.297L214.947 53.7057Z\" stroke=\"#0076A5\" stroke-width=\"54\"/> </svg>"
+    },
+    {
+      "name": "squiggle1",
+      "html_tag": "<svg id=\"squiggle1\" width=\"428\" height=\"444\" viewBox=\"0 0 428 444\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <g id=\"squiggle1\"> <path id=\"Vector 12\" d=\"M17.502 415.038C95.4797 465.121 268.502 333.722 274.201 248.279C279.636 166.807 180.449 142.489 132.586 210.717C94.3642 265.203 180.449 388.183 235.302 400.703C290.155 413.224 378.709 359.512 380.502 300.357\" stroke=\"#0076A5\" stroke-width=\"35\" stroke-linecap=\"round\"/> <path id=\"Vector 13\" d=\"M395.002 243.5C403.002 226.833 416.602 187.8 407.002 165\" stroke=\"#0076A5\" stroke-width=\"35\" stroke-linecap=\"round\"/> <path id=\"Vector 14\" d=\"M394.502 98.5001C389.669 79.1668 374.902 35.9001 354.502 17.5001\" stroke=\"#0076A5\" stroke-width=\"35\" stroke-linecap=\"round\"/> </g> </svg>"
+    },
+    {
+      "name": "squiggle2",
+      "html_tag": "<svg id=\"squiggle2\" width=\"1130\" height=\"199\" viewBox=\"0 0 1130 199\" fill=\"none\" xmlns=\"http://www.w3.org/2000/svg\"> <g id=\"squiggle2\"> <path id=\"Vector 15\" d=\"M186 142.501C242.479 138.349 374.009 112.464 448.305 42.1407C541.174 -45.7632 487.296 104.777 460.711 142.501C434.126 180.225 781.71 42.1407 815.885 42.1407C847.5 42.1407 863.5 98.506 826.5 156.506C781.752 226.652 1156.88 145.704 1110.45 59.9351\" stroke=\"#0076A5\" stroke-width=\"30\" stroke-linecap=\"round\"/> <path id=\"Vector 16\" d=\"M15.0005 172.506C49.1672 170.006 118.3 161.006 121.5 145.006\" stroke=\"#0076A5\" stroke-width=\"30\" stroke-linecap=\"round\"/> </g> </svg>"
+    }
+  ],
+  "messages": [
+    "Hope you're having a wonderful day!",
+    "idk :P",
+    ":)",
+    "This is a message window!",
+    "I can put whatever I want in here!",
+    "You're so cool for checking out my portfolio!",
+    "Double click/tap to bring me forward!"
+  ],
+  "pictures": [
+    "assets/images/pic1.jpg",
+    "assets/images/pic2.jpg",
+    "assets/images/pic3.jpg",
+    "assets/images/pic4.jpg",
+    "assets/images/pic5.jpg",
+    "assets/images/pic6.jpg"
+  ]
+}
